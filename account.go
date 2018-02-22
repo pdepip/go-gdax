@@ -18,17 +18,18 @@ type LedgerEntry struct {
 	Id        int           `json:"id,number"`
 	CreatedAt Time          `json:"created_at,string"`
 	Amount    float64       `json:"amount,string"`
+	Currency  string        `json:"currency"`
 	Balance   float64       `json:"balance,string"`
 	Type      string        `json:"type"`
 	Details   LedgerDetails `json:"details"`
 }
 
 type LedgerDetails struct {
-	OrderId   string `json:"order_id"`
-	TradeId   string `json:"trade_id"`
-	ProductId string `json:"product_id"`
-    TransferId   string `json:"transfer_id"`
-    TransferType string `json:"transfer_type"`
+	OrderId      string `json:"order_id"`
+	TradeId      string `json:"trade_id"`
+	ProductId    string `json:"product_id"`
+	TransferId   string `json:"transfer_id"`
+	TransferType string `json:"transfer_type"`
 }
 
 type GetAccountLedgerParams struct {
