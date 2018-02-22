@@ -27,6 +27,8 @@ type LedgerDetails struct {
 	OrderId   string `json:"order_id"`
 	TradeId   string `json:"trade_id"`
 	ProductId string `json:"product_id"`
+    TransferId   string `json:"transfer_id"`
+    TransferType string `json:"transfer_type"`
 }
 
 type GetAccountLedgerParams struct {
